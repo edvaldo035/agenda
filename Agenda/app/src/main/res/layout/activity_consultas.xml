@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ConsultarActivity"
+    android:clickable="true"
+    android:focusable="true"
+   >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.08"
+            android:weightSum="1"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entre com a consulta"
+                android:id="@+id/lblConsulta"
+                android:hint="Campos a Informar :(Nome, Telefone)"
+                android:focusable="false"
+                android:layout_marginTop="30dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false">
+
+                <Button
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:id="@+id/btConsultar"
+                    android:layout_gravity="right|top"
+                    android:enabled="true"
+                    android:layout_marginLeft="10dp" />
+
+                <EditText
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edPesquisa"
+                    android:layout_gravity="left|center" />
+            </FrameLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="223dp"
+                android:id="@+id/listContatos"
+                android:fastScrollAlwaysVisible="true"
+                android:fastScrollEnabled="true"
+                android:background="#F0F0F0" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo"
+        android:id="@+id/btIncluir"
+        android:background="#F0E0E0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toLeftOf="@+id/btEditar" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        android:id="@+id/btEditar"
+        android:background="#F0F0F0"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btExcluir" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluír"
+        android:id="@+id/btExcluir"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#F0E0E0" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:id="@+id/btVoltar"
+        android:background="#F0F0F0"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/btExcluir" />
+</RelativeLayout>

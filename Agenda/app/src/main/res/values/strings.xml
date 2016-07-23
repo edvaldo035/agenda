@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Agenda de Contatos</string>
+
+    <string name="opcao">Opções!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_consultar">Consultando Contatos</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_edit">Editando Contatos</string>
+    <string name="title_activity_incluir">Incluindo Registros</string>
+    <string name="title_activity_excluir">Excluindo Registro</string>
+</resources>
