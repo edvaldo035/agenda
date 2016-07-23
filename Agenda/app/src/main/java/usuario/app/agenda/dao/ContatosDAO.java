@@ -104,7 +104,7 @@ public class ContatosDAO implements ICrud  {
             lista.add(ct);
             c.moveToNext();
         }
-
+        // fechando a conexão
         c.close();
         return lista;
     }
